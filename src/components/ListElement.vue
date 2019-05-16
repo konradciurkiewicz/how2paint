@@ -1,13 +1,13 @@
 <template>
   <div class="listElement">
-      <div class="box">
+      <div class="box listElement_box">
         <article class=" columns">
-            <div class="column is-three-quarters">
+            <div class="column is-two-thirds">
               <figure class="image ">
                   <img v-bind:src="image.largeImageURL" class="image listImage" alt="Image" >
               </figure>
             </div>
-            <div class="column is-one-quarters">
+            <div class="column is-one-third">
             <div class="content imageInfo">
                 
                 <strong class="imageInfo_title">John Smith</strong> 
@@ -42,5 +42,8 @@
   }
   .listElement {
     margin-bottom: 1em;
+  }
+  .listElement_box {
+    box-shadow: none !important;
   }
 </style>

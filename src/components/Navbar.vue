@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
+    <div class="navbar-brand column  is-one-fifth">
         <a class="navbar-item" href="#">
         How2paint
         </a>
@@ -12,13 +12,15 @@
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start column is-four-fifths">
+        <div class="navbar-start column is-full">
             <div class="navbar-item">
                 <input class="input navbar-search" type="text" placeholder="Text input">
             </div>
         </div>
 
-        <div class="navbar-end column is-one-fifth">
+   
+    </div>
+         <div class="navbar-end column is-one-fifth">
         <div class="navbar-item">
             <div class="buttons navbar-buttons">
             <a class="button is-primary">
@@ -30,7 +32,6 @@
             </div>
         </div>
         </div>
-    </div>
     </nav>
 </template>
 

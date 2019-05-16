@@ -12,7 +12,7 @@
             </div>
         </div>
         </section>
-        <div class="container is-widescreen">
+        <div class="container is-fullhd">
             <ListElement v-for="image in images" v-bind:key="image.id" v-bind:image="image" />
         </div>
   </div>
@@ -40,7 +40,7 @@ export default {
         .then( response => {
 
             this.images = response.data.hits;
-
+            console.log(this.images);
 
         })
         .catch( error => {
