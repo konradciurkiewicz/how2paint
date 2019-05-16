@@ -1,6 +1,20 @@
 <template>
   <div class="listView">
-      <ListElement v-for="image in images" v-bind:key="image.id" v-bind:image="image" />
+      <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+            <h1 class="title">
+                Best water color inspirations
+            </h1>
+            <h2 class="subtitle">
+                Best of water color paintings.
+            </h2>
+            </div>
+        </div>
+        </section>
+        <div class="container is-widescreen">
+            <ListElement v-for="image in images" v-bind:key="image.id" v-bind:image="image" />
+        </div>
   </div>
 </template>
 <script>

@@ -22,5 +22,7 @@ export default {
 </script>
 >
 <style lang="scss">
-
+  #app {
+    background: #EEEEEE;
+  }
 </style>
