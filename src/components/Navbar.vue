@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="#">
         How2paint
@@ -62,4 +62,5 @@ export default {
      margin-left: auto;
      margin-left: auto;
  }
+
 </style>

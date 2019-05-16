@@ -40,4 +40,7 @@
     max-height: 100vh;
     margin: 0 auto;
   }
+  .listElement {
+    margin-bottom: 1em;
+  }
 </style>

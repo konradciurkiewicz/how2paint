@@ -24,7 +24,7 @@ import axios from 'axios'
 export default {
     data() {
          return  {
-             images: ['aaa', 'bbb'],
+             images: [{}],
          }
     },
     components: {
