@@ -3,7 +3,19 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
-import 'bulma/css/bulma.css'
+import './registerServiceWorker'
+import 'font-awesome/css/font-awesome.css'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faPencilAlt, faBookReader } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+
+ 
+library.add(faPencilAlt, faBookReader)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 
 Vue.config.productionTip = false
 

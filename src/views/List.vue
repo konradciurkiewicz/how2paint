@@ -13,6 +13,7 @@
         </div>
         </section>
         <div class="container is-fullhd">
+            <img id="fsdfsdfsdf" src="" >
             <ListElement v-for="image in images" v-bind:key="image.id" v-bind:image="image" />
         </div>
   </div>
@@ -20,6 +21,19 @@
 <script>
 import ListElement from '@/components/ListElement.vue'
 import axios from 'axios'
+import cannyEdgeDetector from "canny-edge-detector";
+import Image from "image-js";
+
+Image.load(
+  "https://pixabay.com/get/57e6d2404c4fad0bffd8992cc429377b1638daf852547441772778d49149_1280.jpg"
+).then(img => {
+  const grey = img.grey();
+  const edge = cannyEdgeDetector(grey);
+  console.log(edge);
+  edge.save("edge.png");
+  document.getElementById('fsdfsdfsdf').src = edge.toDataURL();
+
+});
 
 export default {
     data() {

@@ -21,10 +21,11 @@ export default {
 }
 </script>
 <style lang="scss">
+  @import "@/scss/layout.scss";
   #app {
-    background: linear-gradient(#eeeeee, #ffffff 50vh);
+    background: linear-gradient(#eeeeee, #ffffff 70vh);
   }
   header {
-    margin-bottom: 75px;
+    margin-bottom: 65px;
   }
 </style>
