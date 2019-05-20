@@ -25,13 +25,20 @@ import cannyEdgeDetector from "canny-edge-detector";
 import Image from "image-js";
 
 Image.load(
-  "https://pixabay.com/get/57e6d2404c4fad0bffd8992cc429377b1638daf852547441772778d49149_1280.jpg"
+  "https://pixabay.com/get/55e2d4414f56a914f6da8c7dda79347f153adde2574c704c702778d39e45c15a_1280.jpg"
 ).then(img => {
   const grey = img.grey();
-  const edge = cannyEdgeDetector(grey);
-  console.log(edge);
-  edge.save("edge.png");
-  document.getElementById('fsdfsdfsdf').src = edge.toDataURL();
+    let treshold = grey.getThreshold();
+
+  const edge = cannyEdgeDetector(grey, {
+      lowThreshold:0.7*treshold,
+      highThreshold:treshold,
+      gaussianBlur: 1.1
+  });
+    console.log(edge);
+
+    var outImg = edge.invert();
+    document.getElementById('fsdfsdfsdf').src = outImg.toDataURL();
 
 });
 
@@ -50,7 +57,7 @@ export default {
     },
     created() {
    
-        axios.get('https://pixabay.com/api/?key=3105374-eecb5450ec501c01283fdc969&q=water+colors')
+        axios.get('https://pixabay.com/api/?key=3105374-eecb5450ec501c01283fdc969&q=oil+sea')
         .then( response => {
 
             this.images = response.data.hits;
