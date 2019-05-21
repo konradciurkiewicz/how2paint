@@ -22,6 +22,8 @@ export default {
 </script>
 <style lang="scss">
   @import "@/scss/layout.scss";
+  @import '~bulma-extensions/bulma-badge';
+
   #app {
     background: linear-gradient(#eeeeee, #ffffff 70vh);
   }
