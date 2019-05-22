@@ -80,6 +80,16 @@
               </div>
 
             </div>
+            <div class="columns">
+              <div class="column is-fullwidth">
+                <a class="imageInfo_btn button is-primary is-medium is-fullwidth">
+                    <span class="icon">
+                      <font-awesome-icon icon="download" />   
+                     </span>
+                    <span class="listElement_showMore">Download sketch</span>
+                  </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

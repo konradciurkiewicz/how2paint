@@ -4,12 +4,12 @@ import router from './router'
 import store from './store'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faPencilAlt, faBookReader } from '@fortawesome/free-solid-svg-icons'
+import { faPencilAlt, faBookReader, faFileDownload } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import VueCircleSlider from 'vue-circle-slider'
 
-library.add(faPencilAlt, faBookReader)
+library.add(faPencilAlt, faBookReader, faFileDownload)
 
 Vue.use(VueCircleSlider)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
