@@ -25,6 +25,7 @@ export default {
 
   #app {
     background: linear-gradient(#eeeeee, #ffffff 70vh);
+    min-height: calc( 100vh - 60px );
   }
   header {
     margin-bottom: 65px;

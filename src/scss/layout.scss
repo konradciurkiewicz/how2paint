@@ -27,3 +27,7 @@ $input-shadow: none;
 
 // Import only what you need from Bulma
 @import "~bulma/bulma";
+
+.box {
+    box-shadow: none !important;
+}
