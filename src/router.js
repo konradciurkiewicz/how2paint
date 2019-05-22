@@ -24,6 +24,6 @@ export default new Router({
       path: '/generator',
       name: 'list',
       component: SketchGenerator
-    },
+    }
   ]
 })

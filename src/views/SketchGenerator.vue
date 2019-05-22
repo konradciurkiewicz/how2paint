@@ -84,7 +84,7 @@
               <div class="column is-fullwidth">
                 <a class="imageInfo_btn button is-primary is-medium is-fullwidth">
                     <span class="icon">
-                      <font-awesome-icon icon="download" />   
+                      <font-awesome-icon icon="file-download" />   
                      </span>
                     <span class="listElement_showMore">Download sketch</span>
                   </a>
