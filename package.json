@@ -17,6 +17,7 @@
     "bulma-extensions": "^6.2.7",
     "canny-edge-detector": "^1.0.0",
     "core-js": "^2.6.5",
+    "downloadjs": "^1.4.7",
     "i": "^0.3.6",
     "image-js": "^0.21.6",
     "npm": "^6.9.0",
